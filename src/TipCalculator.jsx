@@ -31,7 +31,7 @@ export default function TipCalculator() {
 
   const handleCalculate = () => {
     if (!billAmount || !seviceQuality || !peopleAmount) {
-      return setError(error);
+      return;
     }
     // e.preventDefault();
     const totalTip = (parseFloat(billAmount) * seviceQuality).toFixed(2);
